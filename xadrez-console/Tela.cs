@@ -40,7 +40,7 @@ namespace xadrez_console {
         public static void imprimirConjunto(HashSet<Peca> conjunto) {
             Console.Write("[");
             foreach (Peca x in conjunto) {
-                Console.Write(x + " ");
+                Console.Write(x + "");
             }
             Console.Write("]");
         }
@@ -54,7 +54,7 @@ namespace xadrez_console {
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("  a b c d e f g h");
+            Console.WriteLine("* a b c d e f g h");
         }
 
         public static void imprimirTabuleiro(Tabuleiro tab, bool[,] posicoePossiveis) {
@@ -76,7 +76,7 @@ namespace xadrez_console {
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("  a b c d e f g h");
+            Console.WriteLine("* a b c d e f g h");
             Console.BackgroundColor = fundoOriginal;
         }
 
@@ -105,6 +105,5 @@ namespace xadrez_console {
                 Console.Write(" ");
             }
         }
-
     }
 }
